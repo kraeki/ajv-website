@@ -1,0 +1,29 @@
+html, body { margin: 0; height: 100%; }
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+#map { position: absolute; inset: 0; background: #f2f2f2; }
+
+/* Club marker: round pin in the AJV colour, configurable via --pin */
+.club-pin {
+  --pin: #c8102e;
+  width: 28px; height: 28px;
+  border-radius: 50% 50% 50% 0;
+  background: var(--pin);
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,.4);
+  transform: rotate(-45deg);
+  display: grid; place-items: center;
+}
+.club-pin span {
+  transform: rotate(45deg);
+  color: #fff; font: 600 12px/1 system-ui, sans-serif;
+}
+
+.club-popup h3 { margin: 0 0 4px; font-size: 15px; }
+.club-popup img { display: block; max-width: 100%; max-height: 90px; margin: 0 0 8px; }
+.club-popup p { margin: 2px 0; font-size: 13px; color: #333; }
+.club-popup a.club-link {
+  display: inline-block; margin-top: 8px; padding: 5px 10px;
+  background: #c8102e; color: #fff; border-radius: 4px;
+  text-decoration: none; font-size: 13px;
+}
+.club-popup a.club-link:hover { filter: brightness(1.1); }

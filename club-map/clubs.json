@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Beispielclub (bitte ersetzen)",
+    "address": "Bahnhofstrasse 1, 5000 Aarau",
+    "description": "Training: Mo + Do 18:00",
+    "website": "https://example.com",
+    "email": "info@example.com",
+    "lat": 47.3913,
+    "lng": 8.0511
+  }
+]
